@@ -1,0 +1,168 @@
+
+
+
+<div class="col-lg-12" style="color: #922B21">
+	<div class="col-lg-12">
+		<h2>Groups</h2>
+		
+		<div ng-if='groups==true' class="alert alert-success alert-dismissible fade in">
+    <a  class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong>  Groups are added successfully!!
+  </div>
+		<p>Manage, Create, Edit Groups</p>
+
+	</div>
+	<ul class="nav nav-tabs">
+		<li class="active "><a target="_self" class="tabstyle"
+			data-toggle="tab" href="#home">Create</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu1">Update</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu2">Delete</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu3">Edit</a></li>
+	</ul>
+
+
+	<br> <br>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+			<div class="dropdown col-lg-12">
+				<div class="col-lg-4">No of Admins</div>
+				<div class="col-lg-4">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						style="width: 150px" data-toggle="dropdown">
+						01 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a>1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+
+						<li><a>4</a></li>
+					</ul>
+				</div>
+
+
+
+			</div>
+			<br> <br>
+
+			<div class="dropdown col-lg-12">
+				<div class="col-lg-4">Group Type</div>
+				<div class="col-lg-4">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown" style="width: 150px">
+						Inventory <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a>Inventory</a></li>
+						<li><a>Messaging</a></li>
+						<li><a>Type3</a></li>
+
+						<li><a>Type 4</a></li>
+					</ul>
+				</div>
+				<br> <br>
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+
+					<div id="" class="editable">
+						<div class="btn-group btn-group-justified col-md-12"
+							style="margin-top: 7px">
+
+							<div ng-repeat="x in eventarray" class="col-lg-3"
+								style="padding: 5px">
+								<div class="col-lg-10" style="padding: 0";>
+									
+									<p
+										style="color: white; height: 30px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden !important; background: #922B21; border-color: transparent; border-bottom-left-radius: 5px; border-top-left-radius: 5px; padding: 15px;"
+										data-toggle="tooltip" data-placement="top" title="{{x}}">
+										{{x}}</p>
+								</div>
+								<div class="col-lg-2" style="padding: 0";>
+									<button aria-label="Close Account Info Modal Box"
+										style="width: 21px; background: #922B21; border: none; color: white; height: 30px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;"
+										ng-click="deleteelement($index);">&times;</button>
+								</div>
+							</div>
+
+						</div>
+						
+
+					</div>
+
+
+					<input id="text1" type="text" style="width: 485px;" ng-model="text"
+						class="form-control inputBox" name="text"
+						placeholder="Type admin name and hit enter">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-12" style="margin-top: 27px;">
+			<div class="col-lg-4">Permissions</div>
+			<div class="col-lg-6">
+				<input type="checkbox" ng-model="cselct1"> Generate Report <input
+					type="checkbox" ng-model="cselct2"> Inventory Access <input
+					type="checkbox" ng-model="cselct3"> Edit Policies
+			</div>
+			<br> <br> <br>
+		</div>
+
+		<div class="btn-group btn-group-justified" style="width: 125px;">
+
+			<a class="btn btn-primary"
+				style="background: #922B21; border-color: transparent;"ng-click="groups()"> Create
+				Group</a>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+<style>
+.tabstyle {
+	width: 100px;
+	background: #922B21;
+	border: #922B21;
+}
+
+.active {
+	color: #922B21 !important;
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover
+	{
+	color: #555;
+	cursor: default;
+	background-color: #922B21 !important;
+	border: none !important;
+	border-bottom-color: transparent;
+}
+
+.nav-tabs {
+	border-bottom: none !important;
+}
+
+.nav-tabs>li>a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+}
+
+a:hover {
+	background-color: #922B21 !important;
+}
+
+.editable {
+	border: 1px solid gray;
+	width: 486px;
+	height: 96px;
+	overflow-y: scroll;
+}
+</style>

@@ -1,0 +1,108 @@
+<div class="col-lg-12" style="color: #922B21">
+	<div class="col-lg-12">
+		<h2>Admins</h2>
+			<div ng-if='admin==true' class="alert alert-success alert-dismissible fade in">
+    <a  class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> Admin is added successfully!!
+  </div>
+		<p>Admins can be given permissions to do tasks on your behalf</p>
+
+	</div>
+	<ul class="nav nav-tabs">
+		<li class="active "><a class="tabstyle" target="_self" data-toggle="tab" href="#home">Add</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab" href="#menu1">Update</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab" href="#menu2">Delete</a></li>
+		<li><a target="_self" class="tabstyle"  data-toggle="tab" href="#menu3">Edit</a></li>
+	</ul>
+	
+	<div class="btn-group btn-group-justified"
+		style="width: 89px; margin-left: 826px; margin-top: -62px;">
+		<a class="btn btn-primary"
+			style="background: #922B21; border-color: transparent;"> view all</a>
+	</div>
+	
+	<br>
+	<br>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+			<input name="name" class="form-control inputBox" ng-model="name"
+				type="text" placeholder="Name" required> <br>
+
+
+			<input name="email" class="form-control inputBox" ng-model="email"
+				type="email" placeholder="Email Address" required> <br>
+		
+
+			<input name="password" class="form-control inputBox"
+				ng-mode="password" type="password" placeholder="password" required>
+
+			<div class="btn-group btn-group-justified"
+				style="width: 125px; margin-left: 789px; margin-top: -33px;">
+				<a class="btn btn-primary"
+					style="background: #922B21; border-color: transparent;">
+					Generate</a>
+			</div>
+			<br> <input class="form-control inputBox" name="adminid"
+				ng-model="adminid" type="text" placeholder="Admin Id" required>
+
+			<br>
+
+		<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Assign to  Group
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a >Group1</a></li>
+      <li><a >Group2</a></li>
+      <li><a>Group3</a></li>
+      
+      <li><a >Group4</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  
+	<div class="btn-group btn-group-justified"
+				style="width: 125px; ">
+				<a class="btn btn-primary"
+					style="background: #922B21; border-color: transparent;" ng-click="admin()">
+					Create Admin</a>
+			</div>
+
+			
+		</div>
+	</div>
+	
+</div>
+<style>
+.tabstyle{
+
+    width: 150px;
+    background: #922B21;
+    border: #922B21;
+}
+
+.active{
+color:#922B21 !important;
+
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #922B21 !important;
+    border: none !important;
+    border-bottom-color: transparent;
+}
+.nav-tabs {
+    border-bottom: none!important;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+a:hover{
+
+  background-color: #922B21 !important;
+}
+</style>

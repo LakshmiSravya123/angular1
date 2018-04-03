@@ -1,0 +1,77 @@
+
+<div class="col-lg-12" style="background: #922B21;height:625px">
+	<form name="myForm">
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<br> <br> <br> <br>
+			<div style="background: white; height: 50px">
+				
+				<h3
+					style="margin-left: 135px; margin-top: -20px; font-family: cursive">Sravya
+					</h3>
+			</div>
+			<br> <br> 
+	 <div ng-if='idname==true' class="alert alert-danger alert-dismissible fade in">
+    <a  href="#/login"class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>!!!!</strong> The user name or password is incorrect. please try again!
+    </div>
+			<input name="name" class="form-control inputBox"
+				ng-model="user.name" type="text" placeholder="LOGIN ID" required><br>
+
+
+
+			<!-- 		 <span style="color: red"
+			ng-show="myForm.name.$dirty && myForm.name.$invalid"> <span
+			ng-show="myForm.name.$error.required">Username is required.</span> 
+			 -->
+
+			<input name="password" class="form-control inputBox"
+				ng-model="user.password" type="password" placeholder="PASSWORD" required>
+			<br> <br> 
+			<!-- <span style="color: red"
+			ng-show="myForm.password.$dirty && myForm.password.$invalid">
+				<span ng-show="myForm.password.$error.required">Password is
+					required.</span> -->
+
+
+
+			<div class="btn-group btn-group-justified"
+				style="width: 128px; margin-left: 140px;">
+				<a class="btn btn-primary"
+					style="background: #FF7D33; border-color: transparent;" ng-click="submit(user)" >LOGIN</a>
+			</div>
+			<a ngclick="forgotpassword();"
+				style="color: #ce6224; margin-left: 150px">Forgot Password</a>
+				
+		</div>
+		
+	</form>
+</div>
+<style>
+::-webkit-input-placeholder {
+	text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	text-align: center;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	text-align: center;
+}
+
+.inputBox {
+	background: transparent;
+	border-top: none;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	bordder-left: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none
+}
+</style>

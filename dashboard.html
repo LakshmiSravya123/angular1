@@ -1,0 +1,122 @@
+<style>
+a {
+	color: #E8E3E2 !important;
+	text-align: center;
+}
+
+a:hover {
+	background: transparent !important;
+	color: white !important
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
+	{
+	background: #922B21 !important;
+	color: black !important;
+}
+
+hr {
+	margin-top: 0px !important;
+	margin-bottom: 6px !important;
+	border: 0;
+	border-top: 1px solid #965757 !important;
+}
+</style>
+
+<div class="container">
+
+	<div
+		style="width: 17%; height: 49px; background: #922B21; margin-left: -15px;"></div>
+	<div
+		style="width: 17%; margin-left: 178px; margin-top: -49px; background: #E8E3E2; color: #922B21; height: 49px; padding: 10px;">
+		11.20PM Tuesday</div>
+	<div
+		style="width: 24%; margin-left: 371px; margin-top: -49px; background: #E8E3E2; color: #922B21; height: 49px; padding: 10px;">
+		Last Login:12.14 PM Yesterday</div>
+	<div
+		style="width: 17%; margin-left: 627px; margin-top: -49px; background: #E8E3E2; color: #922B21; height: 49px; padding: 10px;">Total
+		admins:21</div>
+	<div
+		style="width: 17%; margin-left: 780px; margin-top: -49px; background: #E8E3E2; color: #922B21; height: 49px; padding: 10px;">Admin
+		Online:12</div>
+	<div
+		style="width: 17%; margin-left: 973px; margin-top: -49px; background: #E8E3E2; color: #922B21; height: 49px; padding: 10px;">
+		jon snow <img style="width: 15px; height: 15px;" src="images/icon.jpg">
+	</div>
+
+	<div style="background: white; height: 50px">
+		<img
+			style="width: 25px; height: 25px; margin-left: 20px; margin-bottom: -3px; margin-top: 8px;"
+			src="images/tresmercarilogo.png" />
+		<h4 style="margin-left: 45px; margin-top: -20px; font-family: cursive">Tres
+			Mercari</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-2" style="background: #922B21; height: 520px;">
+			<img
+				style="width: 70px; height: 70px; margin-left: 46px; margin-top: 43px"
+				src="images/profilepic.jpg" />
+			<ul class="nav nav-pills nav-stacked">
+				<br>
+
+				<li class="active"><a target="_self" href="#tab_a"
+					data-toggle="tab">Home</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_b" data-toggle="tab">Admins</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_c" data-toggle="tab">Groups</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_d" data-toggle="tab">policies</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_e" data-toggle="tab">Reports</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_f" data-toggle="tab">Inventory</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_g" data-toggle="tab">Messaging</a></li>
+				<hr>
+				<li><a target="_self" href="#tab_h" data-toggle="tab" ng-click="dropdown()">Dropdown</a></li>
+			</ul>
+			<!-- <li ng-class="{ active: isSet(1) }"><a href
+					ng-click="setTab(1)">Home</a></li>
+				<li ng-class="{ active: isSet(2) }"><a href
+					ng-click="setTab(2)">Admins</a></li>
+				<li ng-class="{ active: isSet(3) }"><a href
+					ng-click="setTab(3)">Groups</a></li>
+				<li ng-class="{ active: isSet(4) }"><a href
+					ng-click="setTab(4)">policies</a></li>
+				<li ng-class="{ active: isSet(5) }"><a href
+					ng-click="setTab(5)">Reports</a></li>
+				<li ng-class="{ active: isSet(6) }"><a href
+					ng-click="setTab(6)">Inventory</a></li>
+				<li ng-class="{ active: isSet(7) }"><a href
+					ng-click="setTab(7)">Messaging</a></li>
+
+			</ul> -->
+		</div>
+		<div class="tab-content col-lg-10">
+
+			<div class="tab-pane active" id="tab_a">
+				<ng-include src=" 'HTML/home.html' "></ng-include>
+			</div>
+			<div class="tab-pane" id="tab_b">
+				<ng-include src=" 'HTML/admins.html' "></ng-include>
+			</div>
+			<div class="tab-pane" id="tab_c">
+				<ng-include src=" 'HTML/groups.html' "></ng-include>
+			</div>
+			<div class="tab-pane" id="tab_d"></div>
+
+			<div class="tab-pane" id="tab_e"></div>
+
+			<div class="tab-pane" id="tab_f">
+				<ng-include src=" 'HTML/inventory.html' "></ng-include>
+			</div>
+			<div class="tab-pane" id="tab_g"></div>
+			<div class="tab-pane" id="tab_h">
+				<ng-include src=" 'HTML/Dropdown.html' "></ng-include>
+			</div>
+		</div>
+	</div>
+
+</div>
+

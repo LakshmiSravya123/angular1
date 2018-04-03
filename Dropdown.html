@@ -1,0 +1,400 @@
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div>
+	<ul class="dropdownsec">
+		<li class="dropdown-submenu" ng-repeat="(key,value) in Astronomy"
+			ng-mouseover="start($index)"><a> {{key| uppercase}}</a>
+
+
+			<ul ng-if="drop==3" class="dropdownsec">
+				<li class="dropdown-submenu1"
+					ng-repeat="(key,value) in Astronomy.results"
+					ng-mouseover="start1($index)"><a>{{key }}</a>
+					<ul ng-if="channel==0" class="dropdownsec">
+						<li class="dropdown-submenu2" id="three{{$index}}"
+							ng-repeat="(key,value) in Astronomy.results.channel"
+							ng-mouseover="start2($index)"><a>{{key|uppercase}}</a>
+
+							<ul ng-if="count!=0">
+								<ul ng-if="hier==0" class="dropdownsec1">
+
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.astronomy"><a>{{key|uppercase}}</a>
+									</li>
+								</ul>
+								<ul ng-if="hier==1" class="dropdownsec2">
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.atmosphere"><a>{{key|uppercase}}</a>
+									</li>
+								</ul>
+
+								<ul ng-if="hier==3" class="dropdownsec3">
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.image"><a>{{key|uppercase}}</a>
+									</li>
+								</ul>
+								<ul ng-if="hier==4" class="dropdownsec4">
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.item"
+										ng-mouseover="itemcondition($index)"><a>{{key|uppercase}}</a>
+
+
+										<ul ng-if="subcount!=0">
+
+											<ul ng-if="item==0" class="dropdownsecsub1">
+												<li class="dropdown-submenu3"
+													ng-repeat="(key,value) in Astronomy.results.channel.item.condition"><a>{{key|uppercase}}</a>
+												</li>
+											</ul>
+											<ul ng-if="item==2" class="dropdownsecsub2">
+												<li class="dropdown-submenu3"
+													ng-repeat="(key,value) in Astronomy.results.channel.item.forecast">
+												<li ng-repeat="(key,value) in  value[0] "><a>{{key|uppercase}}</a>
+												</li>
+											</ul>
+
+
+											<ul ng-if="item==3" class="dropdownsecsub3">
+												<li class="dropdown-submenu3"
+													ng-repeat="(key,value) in Astronomy.results.channel.item.guid"><a>{{key|uppercase}}</a>
+												</li>
+											</ul>
+										</ul></li>
+								</ul>
+								<ul ng-if="hier==8" class="dropdownsec5">
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.location"><a>{{key|uppercase}}</a>
+									</li>
+								</ul>
+
+
+								<ul ng-if="hier==11" class="dropdownsec6">
+
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.units"><a>{{key|uppercase}}</a>
+									</li>
+								</ul>
+								<ul ng-if="hier==12" class="dropdownsec7">
+									<li class="dropdown-submenu"
+										ng-repeat="(key,value) in Astronomy.results.channel.wind"><a>{{key|uppercase}}</a>
+									</li>
+								</ul>
+							</ul></li>
+					</ul>
+			</ul></li>
+	</ul>
+
+
+</div>
+
+
+
+<style>
+a,a:hover {
+	text-decoration: none;
+}
+
+.dropdownsec {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -36px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	box-shadow: 2px 2px #676262;
+	margin-left: 157px;
+}
+
+.dropdownsec1 {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -270px;
+	margin-left: 157px;
+	font-size: 14px;
+	box-shadow: 2px 2px #676262;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-left: 157px;
+}
+
+.dropdownsec2 {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -252px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	box-shadow: 2px 2px #676262;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-left: 157px;
+}
+
+.dropdownsec3 {
+	position: absolute;
+	top: 100%;
+	box-shadow: 2px 2px #676262;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -213px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-left: 157px;
+}
+
+.dropdownsec8 {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -213px;
+	margin-left: 157px;
+	font-size: 14px;
+	box-shadow: 2px 2px #676262;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-left: 157px;
+}
+
+.dropdownsec4 {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -194px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	box-shadow: 2px 2px #676262;
+	margin-left: 157px;
+}
+
+.dropdownsec5 {
+	box-shadow: 2px 2px #676262;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -113px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-left: 157px;
+}
+
+.dropdownsec6 {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -53px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	box-shadow: 2px 2px #676262;
+	margin-left: 157px;
+}
+
+.dropdownsec7 {
+	position: absolute;
+	top: 100%;
+	box-shadow: 2px 2px #676262;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -36px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+}
+
+.dropdownsecsub1 {
+	position: absolute;
+	top: 100%;
+	box-shadow: 2px 2px #676262;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -191px;
+	margin-left: 157px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	margin-left: 157px;
+}
+
+.dropdownsecsub2 {
+	margin-left: 157px;
+	position: absolute;
+	top: 100%;
+	box-shadow: 2px 2px #676262;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -153px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+}
+
+.dropdownsecsub3 {
+	margin-left: 157px;
+	position: absolute;
+	top: 100%;
+	box-shadow: 2px 2px #676262;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin-top: -128px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #922B21;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+}
+
+.dropdown-submenu:hover {
+	background-color: white;
+	color: #922B21;
+}
+.dropdown-submenu1:hover {
+	background-color: white;
+	color: #922B21;
+}
+.dropdown-submenu2:hover {
+	background-color: white;
+	color: #922B21;
+}
+.dropdown-submenu3:hover {
+	background-color: white;
+	color: #922B21;
+}
+</style>
+
+
+
+

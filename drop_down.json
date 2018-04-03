@@ -1,0 +1,149 @@
+{
+    "query": {
+        "count": 1,
+        "created": "2017-09-02T16:36:08Z",
+        "lang": "en-US",
+        "results": {
+            "channel": {
+                "units": {
+                    "distance": "mi",
+                    "pressure": "in",
+                    "speed": "mph",
+                    "temperature": "F"
+                },
+                "title": "Yahoo! Weather - Nome, AK, US",
+                "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/",
+                "description": "Yahoo! Weather for Nome, AK, US",
+                "language": "en-us",
+                "lastBuildDate": "Sat, 02 Sep 2017 08:36 AM AKDT",
+                "ttl": "60",
+                "location": {
+                    "city": "Nome",
+                    "country": "United States",
+                    "region": " AK"
+                },
+                "wind": {
+                    "chill": "34",
+                    "direction": "68",
+                    "speed": "18"
+                },
+                "atmosphere": {
+                    "humidity": "90",
+                    "pressure": "1002.0",
+                    "rising": "0",
+                    "visibility": "13.5"
+                },
+                "astronomy": {
+                    "sunrise": "7:46 am",
+                    "sunset": "10:15 pm"
+                },
+                "image": {
+                    "title": "Yahoo! Weather",
+                    "width": "142",
+                    "height": "18",
+                    "link": "http://weather.yahoo.com",
+                    "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                },
+                "item": {
+                    "title": "Conditions for Nome, AK, US at 07:00 AM AKDT",
+                    "lat": "64.499474",
+                    "long": "-165.405792",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/",
+                    "pubDate": "Sat, 02 Sep 2017 07:00 AM AKDT",
+                    "condition": {
+                        "code": "11",
+                        "date": "Sat, 02 Sep 2017 07:00 AM AKDT",
+                        "temp": "40",
+                        "text": "Showers"
+                    },
+                    "forecast": [
+                        {
+                            "code": "39",
+                            "date": "02 Sep 2017",
+                            "day": "Sat",
+                            "high": "47",
+                            "low": "40",
+                            "text": "Scattered Showers"
+                        },
+                        {
+                            "code": "12",
+                            "date": "03 Sep 2017",
+                            "day": "Sun",
+                            "high": "52",
+                            "low": "41",
+                            "text": "Rain"
+                        },
+                        {
+                            "code": "28",
+                            "date": "04 Sep 2017",
+                            "day": "Mon",
+                            "high": "58",
+                            "low": "46",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "34",
+                            "date": "05 Sep 2017",
+                            "day": "Tue",
+                            "high": "56",
+                            "low": "46",
+                            "text": "Mostly Sunny"
+                        },
+                        {
+                            "code": "30",
+                            "date": "06 Sep 2017",
+                            "day": "Wed",
+                            "high": "58",
+                            "low": "47",
+                            "text": "Partly Cloudy"
+                        },
+                        {
+                            "code": "30",
+                            "date": "07 Sep 2017",
+                            "day": "Thu",
+                            "high": "52",
+                            "low": "41",
+                            "text": "Partly Cloudy"
+                        },
+                        {
+                            "code": "28",
+                            "date": "08 Sep 2017",
+                            "day": "Fri",
+                            "high": "51",
+                            "low": "43",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "30",
+                            "date": "09 Sep 2017",
+                            "day": "Sat",
+                            "high": "48",
+                            "low": "41",
+                            "text": "Partly Cloudy"
+                        },
+                        {
+                            "code": "28",
+                            "date": "10 Sep 2017",
+                            "day": "Sun",
+                            "high": "45",
+                            "low": "42",
+                            "text": "Mostly Cloudy"
+                        },
+                        {
+                            "code": "30",
+                            "date": "11 Sep 2017",
+                            "day": "Mon",
+                            "high": "48",
+                            "low": "41",
+                            "text": "Partly Cloudy"
+                        }
+                    ],
+                    "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/11.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Showers\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Sat - Scattered Showers. High: 47Low: 40\n<BR /> Sun - Rain. High: 52Low: 41\n<BR /> Mon - Mostly Cloudy. High: 58Low: 46\n<BR /> Tue - Mostly Sunny. High: 56Low: 46\n<BR /> Wed - Partly Cloudy. High: 58Low: 47\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n<BR />\n]]>",
+                    "guid": {
+                        "isPermaLink": "false"
+                    }
+                }
+            }
+        }
+    }
+}

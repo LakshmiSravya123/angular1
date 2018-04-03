@@ -1,0 +1,185 @@
+<div class="col-lg-12" style="color: #922B21">
+	<div class="col-lg-12">
+		<h2>Inventory</h2>
+		<p>View and Edit Inventory details here</p>
+
+	</div>
+	<ul class="nav nav-tabs">
+		<li class="active "><a target="_self" class="tabstyle"
+			data-toggle="tab" href="#home">Search</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu1">Add</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu1">Update</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu2">Delete</a></li>
+		<li><a target="_self" class="tabstyle" data-toggle="tab"
+			href="#menu3">Report</a></li>
+	</ul>
+
+	<div class="btn-group btn-group-justified"
+		style="width: 89px; margin-left: 726px; margin-top: -62px;">
+		<a class="btn btn-primary"
+			style="background: #922B21; border-color: transparent;"> view all</a>
+	</div>
+
+	<br> <br>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+
+			<input name="search" class="form-control inputBox"
+				style="width: 354px;" ng-model="search" type="text"
+				placeholder="Search Here" required>
+
+
+			<div class="btn-group btn-group-justified"
+				style="width: 125px; margin-left: 320px; margin-top: -33px;">
+				<a class="btn btn-primary"
+					style="background: #922B21; border-color: transparent;"> Search</a>
+			</div>
+			<br> 
+
+			<p class="pbuttons" style="margin-left: 569px;" href="#/unlist">UNLIST
+				ITEM</p>
+			<p style="margin-left: 665px; margin-top: -27px" class="pbuttons"
+				href="#/edit">EDIT</p>
+			<p style="margin-left: 718px; margin-top: -27px" class="pbuttons"
+				href="#/delete">DELETE</p>
+
+			<br>
+
+
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<div class="col-lg-3">
+						<input type="checkbox"> <img style="width: 107px;"
+							src="images/PepeJeanshirtCasual.jpg" />
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-8">
+						<h4>Pepe Jean Shirt Casual</h4>
+						<p style="margin-left: 67px;">Avg rating</p>
+						<img style="margin-top: -39px; height: 41px; width: 87px;"
+							src="images/5-star-rating.png" />
+						<div class="col-lg-6">
+							<p>Current Price</p>
+							<p>Lowest Price</p>
+						</div>
+						<div class="col-lg-6">
+							<p>1200</p>
+							<p>750</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="col-lg-3">
+						<input type="checkbox"> <img style="width: 107px;"
+							src="images/PepejeanslimDenim2.jpg" />
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-8">
+						<h4>Pepe Jeans Slim Denim</h4>
+						<p style="margin-left: 67px;">Avg rating</p>
+						<img style="margin-top: -39px; height: 41px; width: 87px;"
+							src="images/5-star-rating.png" />
+						<div class="col-lg-6">
+							<p>Current Price</p>
+							<p>Lowest Price</p>
+						</div>
+						<div class="col-lg-6">
+							<p>1200</p>
+							<p>750</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<div class="col-lg-3">
+						<input type="checkbox"> <img style="width: 107px;"
+							src="images/PepeJeanShirtSlim.jpg" />
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-8">
+						<h4>Pepe Jean Shirt Slim</h4>
+						<p style="margin-left: 67px;">Avg rating</p>
+						<img style="margin-top: -39px; height: 41px; width: 87px;"
+							src="images/5-star-rating.png" />
+						<div class="col-lg-6">
+							<p>Current Price</p>
+							<p>Lowest Price</p>
+						</div>
+						<div class="col-lg-6">
+							<p>1200</p>
+							<p>750</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="col-lg-3">
+						<input type="checkbox"> <img style="width: 107px;"
+							src="images/PepejeanSlimDenim.jpg" />
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-8">
+						<h4>Pepe Jean Slim Denim</h4>
+						<p style="margin-left: 67px;">Avg rating</p>
+						<img style="margin-top: -39px; height: 41px; width: 87px;"
+							src="images/5-star-rating.png" />
+						<div class="col-lg-6">
+							<p>Current Price</p>
+							<p>Lowest Price</p>
+						</div>
+						<div class="col-lg-6">
+							<p>1200</p>
+							<p>750</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+</div>
+
+
+<style>
+.tabstyle {
+	width: 100px;
+	background: #922B21;
+	border: #922B21;
+}
+
+.active {
+	color: #922B21 !important;
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover
+	{
+	color: #555;
+	cursor: default;
+	background-color: #922B21 !important;
+	border: none !important;
+	border-bottom-color: transparent;
+}
+
+.nav-tabs {
+	border-bottom: none !important;
+}
+
+.nav-tabs>li>a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+}
+
+a:hover {
+	background-color: #922B21 !important;
+}
+</style>
